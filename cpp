@@ -136,4 +136,30 @@ int main() {
 
     return 0;
 }
+// How to access element in multidimensional array (2-D array)\
+#include<iostream>
+using namespace std;
+
+int main (){
+    int multiDimensionalArray[3][5]={
+        {2 , 3 ,4 ,5 , 6},
+        {10 , 12 , 13 , 14 , 15},
+        {7 , 8 , 10 , 0 , 5},
+    };
+    cout << multiDimensionalArray[1][3];
+    return 0;
+}
+
+// Basic array accessing element and adding them
+#include<iostream>
+using namespace std;
+
+int main (){
+    int matrix[2][2]={
+        { 2 , 3},
+        {4, 5},
+    };
+    cout<<matrix[1][0] + matrix[1][1];
+    return 0;
+}
 
