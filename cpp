@@ -1,3 +1,30 @@
+// This is very basic that how to print any value in cpp
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    cout<<"This is a normal output";
+    return 0;
+}
+
+//This is how we take the input from user and it prints as output same
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int num1 , num2;
+    cout<<"Please enter your first number :";
+    cin>>num1;
+    cout<<"Please enter your second number :";
+    cin>>num2;
+        cout << "Your first number is " << num1 << " and your second number is " << num2;
+    return 0;
+    
+}
+
+// and this is how we directly print values 
 #include<iostream>
 using namespace std;
 int main (){
@@ -9,6 +36,56 @@ int main (){
         cout<<"Day is "<<days[dayNumber - 1];
     }else {
         cout<<"Please enter a correct number";    }
+    return 0;
+}
+
+//If-Else question
+
+#include<iostream>
+using namespace std;
+int main(){
+    int age;
+    cout<<"Please enter your age : ";
+    cin>>age;
+    if (age<18){
+        cout<<"You are not allowed to rent a bike";
+    }else if(age>18 && age<=60){
+        cout<<"Yes you can rent a bike";
+    }else if(age>60){
+        cout<<"Please provide medical assurance";
+    };
+    
+    return 0;
+}
+
+// Switch case statement
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int services;
+    cout<<"Please enter your number :";
+    cin>>services;
+    switch(services){
+        case 1:
+        cout<<"Talk to sales";
+        break;
+        case 2:
+        cout<<"Talk to technical support";
+        break;
+        case 3:
+        cout<<"Talk to billing department";
+        break;
+        case 4:
+        cout<<"Talk to account management";
+        break;
+        case 5:
+        cout<<"Exit";
+        break;
+        default:
+        cout<<"Invalid Choice";
+    }
     return 0;
 }
 // THis is a 1-D array problem
