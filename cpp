@@ -58,6 +58,31 @@ int main(){
     return 0;
 }
 
+//Another If-else statement
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int num1;
+    int num2;
+    string calcOperator;
+    cout<<"Please enter your first number :";
+    cin>>num1;
+    cout<<"Please enter your second number :";
+    cin>>num2;
+    cout<<"Please now enter your operator";
+    cin>>calcOperator;
+    if(calcOperator == "+"){
+        cout<<"Sum of your number is "<<num1+num2;
+    }else if (calcOperator == "*"){
+        cout<<"So after multiplying your output is"<<num1*num2;
+    }else if (calcOperator == "-"){
+        cout<<"so after subtracting your output is"<<num1-num2;
+    }else{
+        cout<<"You entered a invalid operator";
+    }
+
 // Switch case statement
 
 #include<iostream>
@@ -88,6 +113,46 @@ int main(){
     }
     return 0;
 }
+
+//Another example of switch statement
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num1;
+    int num2;
+    char calcOperator;
+
+    cout << "Please enter your first number: ";
+    cin >> num1;
+
+    cout << "Please enter your second number: ";
+    cin >> num2;
+
+    cout << "Please now enter your operator (+, -, *): ";
+    cin >> calcOperator;
+
+    switch (calcOperator) {
+        case '+':
+            cout << "Sum of your numbers is " << num1 + num2;
+            break;
+
+        case '*':
+            cout << "After multiplying, your output is " << num1 * num2;
+            break;
+
+        case '-':
+            cout << "After subtracting, your output is " << num1 - num2;
+            break;
+
+        default:
+            cout << "You entered an invalid operator";
+    }
+
+    return 0;
+}
+
 // THis is a 1-D array problem
 
 // Store 5 roll numbers in an array and print them.
@@ -263,3 +328,6 @@ int main (){
     return 0;
     
 }
+
+
+//
