@@ -329,5 +329,41 @@ int main (){
     
 }
 
+//Need to print all even numbers between 1 to 50
 
-//
+#include<iostream>
+using namespace std;
+int main(){
+  for(int i = 0; i<=50; i++){
+    if( i%2 == 0){
+      cout<<i<<endl;
+    }
+  }
+  return 0;
+}
+
+// To print all the odd numbers between 1 to 50
+
+#include<iostream>
+using namespace std;
+int main(){
+  for(int i = 0; i<=50; i++){
+    if( i%2 != 0){
+      cout<<i<<endl;
+    }
+  }
+  return 0;
+}
+
+//To print from monday to saturday
+
+#include<iostream>
+using namespace std;
+int main(){
+  string days[]={"Monday" , "Tuesday" , "Wednesday" , "Thursday" , "Friday" , "Saturday" , "Sunday"};
+  
+  for(int i = 0; i<=6; i++){
+    cout<<days[i]<<endl;
+  }
+return 0;
+}
