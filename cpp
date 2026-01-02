@@ -382,3 +382,28 @@ int main(){
   };
   return 0;
 }
+
+//Now from here functions starts
+
+#include<iostream>
+using namespace std;
+
+int main(){
+  void outputValue(){
+    cout<<"hey, my name is Diwakar and this is my first function program";
+  };
+  outputValue();
+  return 0;
+}
+//this will give error you know why because in c++ functions can't be inside another functions it should a a global function
+
+#include<iostream>
+using namespace std;
+void outputValue(){
+  cout<<"hey, my name is Diwakar and this is my first function program"<<endl;
+};
+int main(){
+  outputValue();
+  outputValue();
+  return 0;
+}
