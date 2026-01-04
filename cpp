@@ -407,3 +407,36 @@ int main(){
   outputValue();
   return 0;
 }
+//Sum of 2 numbers in functions
+#include<iostream>
+using namespace std;
+int sum (int a , int b){
+ int s = a+b;
+  return s;
+}
+int main(){
+  cout<<sum(24 , 6)<<endl;
+  return 0;
+}
+
+//To calculate the minimum of two numbers in functions
+
+#include<iostream>
+using namespace std;
+int minofTwo (int a , int b){
+  if(a<b){
+    return a;
+  }else{
+    return b;
+  }
+};
+int main(){
+  int a;
+  int b;
+  cout<<"Please enter your first number :";
+  cin>>a;
+  cout<<"Please enter your second value :";
+  cin>>b;
+  cout<<"So minimum is"<<minofTwo(a,b);
+  return 0;
+}
