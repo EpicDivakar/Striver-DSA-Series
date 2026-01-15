@@ -439,4 +439,3 @@ int main(){
   cin>>b;
   cout<<"So minimum is"<<minofTwo(a,b);
   return 0;
-}
