@@ -351,19 +351,81 @@ int main (){
 }
 
 // Some questions on for loop
+//How to print number from 1 to 10 in for loop 
 
-#include <iostream>
+#include<iostream>
 using namespace std;
-
-int main (){
-    int numbers[2][4]= {1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10};
-    for(int i=0; i<10; i++){
-        cout<<numbers[i]<<endl;
+int main(){
+    for(int i = 1; i<=10; i++){
+        cout<<i<<endl;
     }
     return 0;
-    
 }
 
+// here adding once number get printed it adds 5 to it until it's less than 10 and stops if it greater than 10 
+
+#include<iostream>
+using namespace std;
+int main(){
+    for(int i = 1; i<=10; i=i+5){
+        cout<<i<<endl;
+    }
+    return 0;
+}
+//A pattern in loops and all concepts clear and the logic is how many times things need to be printed is told in rows that is outer loop and what to be printed is told in inner loop 
+
+#include<iostream>
+using namespace std;
+int main(){
+    for (int i = 1; i<=5; i++){
+        for(int i=1; i<=5; i++){
+            cout<<"*";
+        }
+    cout<<endl;
+    }
+    return 0;
+}
+
+//Patterns from striver DSA sheet
+//1st Pattern
+
+#include<iostream>
+using namespace std;
+int main(){
+    for(int i=1; i<=5; i++){
+        for(int i=1; i<=5; i++){
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
+//2nd Pattern
+
+#include<iostream>
+using namespace std;
+int main(){
+    for (int row = 1; row<=5; row++){
+        for(int col = 1; col<=row; col++){
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
+//3rd Pattern
+
+#include<iostream>
+using namespace std;
+int main(){
+    for (int row = 1; row<=5; row++){
+        for(int col = 1; col<=row; col++){
+            cout<<col;
+        }
+        cout<<endl;
+    }
+    return 0;
+}
 //Need to print all even numbers between 1 to 50
 
 #include<iostream>
